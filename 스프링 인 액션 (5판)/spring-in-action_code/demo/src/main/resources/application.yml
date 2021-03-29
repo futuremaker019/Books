@@ -1,0 +1,34 @@
+
+logging:
+  level:
+    org:
+      springframework:
+        web:
+          servlet:
+            mvc:
+              method:
+                annotation: TRACE
+
+
+spring:
+  profiles:
+  #include: oauth
+  jpa:
+    show_sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+        format_sql: true
+    hibernate:
+      ddl-auto: update
+  h2:
+    console:
+      enabled: true
+
+  session:
+    store-type: jdbc
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/study?useUnicode=yes&characterEncoding=UTF-8&serverTimezone=UTC
+    username: root
+    password: root
+    driverClassName: com.mysql.cj.jdbc.Driver
