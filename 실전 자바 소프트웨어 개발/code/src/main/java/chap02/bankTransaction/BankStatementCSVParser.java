@@ -28,5 +28,13 @@ public class BankStatementCSVParser {
         return bankTransactions;
     }
 
+    public BankTransaction parseFromJSON(final String line) {
+        throw new UnsupportedOperationException();
+    }
+
+    public BankTransaction parseFromXML(final String line) {
+        throw new UnsupportedOperationException();
+    }
+
 
 }
