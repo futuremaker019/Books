@@ -1,5 +1,6 @@
 package chapter02;
 
+import chapter02.discountPolicy.DefaultDiscountPolicy;
 import chapter02.discountPolicy.DiscountPolicy;
 
 import java.time.Duration;
@@ -14,6 +15,10 @@ public class Movie {
         this.title = title;
         this.ruingTime = ruingTime;
         this.fee = fee;
+        this.discountPolicy = discountPolicy;
+    }
+
+    public void changeDiscountPolicy(DiscountPolicy discountPolicy) {
         this.discountPolicy = discountPolicy;
     }
 
