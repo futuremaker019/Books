@@ -1,0 +1,43 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+abstract class Duck {
+Fly fly
+Quack quack
+performFly()
+performQuack()
+setFly()
+setQuack()
+display()
+}
+interface Fly {
+fly()
+}
+class FlyNoWay {
+fly()
+}
+class FlyWithWings {
+fly()
+}
+interface Quack {
+makeSound()
+}
+class MuteQuack {
+makeSound()
+}
+class RealQuack {
+makeSound()
+}
+class MallardDuck {
+display()
+}
+
+Duck <|-- MallardDuck
+Fly <-- Duck
+Quack <-- Duck
+Fly <|.. FlyNoWay
+Fly <|.. FlyWithWings
+Quack<|.. MuteQuack
+Quack<|.. RealQuack
+
+@enduml
