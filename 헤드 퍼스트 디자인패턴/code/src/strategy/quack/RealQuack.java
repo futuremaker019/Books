@@ -1,4 +1,4 @@
-package quack;
+package strategy.quack;
 
 public class RealQuack implements Quack{
 
