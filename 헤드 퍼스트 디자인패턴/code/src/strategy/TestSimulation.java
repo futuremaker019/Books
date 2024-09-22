@@ -1,5 +1,7 @@
-import fly.FlyNoWay;
-import quack.MuteQuack;
+package strategy;
+
+import strategy.fly.FlyNoWay;
+import strategy.quack.MuteQuack;
 
 public class TestSimulation {
 
