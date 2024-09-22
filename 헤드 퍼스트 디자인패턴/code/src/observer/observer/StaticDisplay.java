@@ -1,4 +1,6 @@
-package observer;
+package observer.observer;
+
+import observer.subject.WeatherData;
 
 public class StaticDisplay implements Observer, Display {
     private float maxTemp = 0.0f;

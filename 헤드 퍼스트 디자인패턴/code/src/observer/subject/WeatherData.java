@@ -1,8 +1,11 @@
-package observer;
+package observer.subject;
 
+import observer.observer.Observer;
+
+import java.util.ArrayList;
 import java.util.List;
 
-public class WeatherData implements Subject{
+public class WeatherData implements Subject {
 
     private List<Observer> observers;
     private float temperature;
@@ -12,8 +15,8 @@ public class WeatherData implements Subject{
     /*
         weather 데이터가 생성시 모든 옵저버를 등록한다.
      */
-    public WeatherData(List<Observer> observers) {
-        this.observers = observers;
+    public WeatherData() {
+        this.observers = new ArrayList<>();
     }
 
     // 옵저버 등록
