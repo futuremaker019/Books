@@ -74,7 +74,7 @@ classDiagram
 
 > 구현보다는 인터페이스에 맞춰 프로그래밍한다.
 
-> 상속보다는 구성을 이용하자
+> 상속(inheritance)보다는 구성(composition)을 이용하자
 
 <br>
 
@@ -113,7 +113,7 @@ public class MallardDuck extends Duck{
 }
 ```
 
-구상 클래스의 값을 변경하는 작업은 Dock 에서 정의하면 Duck을 상속받은 모든 클래스에서 사용이 가능하다.
+구상 클래스의 값을 변경하는 작업은 `추상클래스(Duck)` 에서 정의하면 Duck을 상속받은 모든 클래스에서 사용이 가능하다.
 
 ```java
 // Duck
