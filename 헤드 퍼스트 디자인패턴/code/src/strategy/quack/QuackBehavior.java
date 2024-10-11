@@ -1,5 +1,5 @@
 package strategy.quack;
 
-public interface Quack {
+public interface QuackBehavior {
     void makeSound();
 }

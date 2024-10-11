@@ -1,6 +1,6 @@
 package strategy.quack;
 
-public class MuteQuack implements Quack {
+public class MuteQuackBehavior implements QuackBehavior {
 
     @Override
     public void makeSound() {

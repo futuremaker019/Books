@@ -1,6 +1,6 @@
 package strategy.fly;
 
-public interface Fly {
+public interface FlyBehavior {
     void fly();
 
 }

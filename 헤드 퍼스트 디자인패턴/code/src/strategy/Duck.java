@@ -1,12 +1,12 @@
 package strategy;
 
-import strategy.fly.Fly;
-import strategy.quack.Quack;
+import strategy.fly.FlyBehavior;
+import strategy.quack.QuackBehavior;
 
 public abstract class Duck {
 
-    Fly fly;
-    Quack quack;
+    FlyBehavior flyBehavior;
+    QuackBehavior quackBehavior;
 
     public Duck() {}
 
@@ -14,11 +14,11 @@ public abstract class Duck {
 
     // ㅇ
     public void performFly() {
-        fly.fly();
+        flyBehavior.fly();
     }
 
     public void performQuack() {
-        quack.makeSound();
+        quackBehavior.makeSound();
     }
 
     public void swim() {
@@ -26,13 +26,13 @@ public abstract class Duck {
     }
 
     // 특정 오리 객체가 생성 후 `날기` 기능을 다시 정의해주는 메서드
-    public void setFly(Fly fly) {
-        this.fly = fly;
+    public void setFly(FlyBehavior flyBehavior) {
+        this.flyBehavior = flyBehavior;
     }
 
     // 특정 오리 객체가 생성 후 `소리내기` 기능을 다시 정의해주는 메서드
-    public void setQuack(Quack quack) {
-        this.quack = quack;
+    public void setQuack(QuackBehavior quackBehavior) {
+        this.quackBehavior = quackBehavior;
     }
 
 }

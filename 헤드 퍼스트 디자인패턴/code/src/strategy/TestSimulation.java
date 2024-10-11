@@ -1,7 +1,7 @@
 package strategy;
 
-import strategy.fly.FlyNoWay;
-import strategy.quack.MuteQuack;
+import strategy.fly.FlyBehaviorNoWay;
+import strategy.quack.MuteQuackBehavior;
 
 public class TestSimulation {
 
@@ -12,8 +12,8 @@ public class TestSimulation {
 
         System.out.println();
 
-        duck.setFly(new FlyNoWay());
-        duck.setQuack(new MuteQuack());
+        duck.setFly(new FlyBehaviorNoWay());
+        duck.setQuack(new MuteQuackBehavior());
         duck.performFly();
         duck.performQuack();
     }

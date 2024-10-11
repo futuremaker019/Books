@@ -1,6 +1,6 @@
 package strategy.fly;
 
-public class FlyNoWay implements Fly{
+public class FlyBehaviorNoWay implements FlyBehavior {
 
     @Override
     public void fly() {
